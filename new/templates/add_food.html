@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Food</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'add_food' %}">Add Food</a></li>
+            {% comment %} <li><a href="{% url 'logout' %}">Logout</a></li>
+            <li><a href="{% url 'profile' %}">Profile</a></li>
+            <li><a href="{% url 'food_search' %}">Search</a></li>
+            <li><a href="{% url 'food_filter' %}">Filter</a></li> {% endcomment %}
+        </ul>
+    </nav>
+
+    <h1>Add New Food</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'food_list' %}">Back to list</a>
+</body>
+</html>

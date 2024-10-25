@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Detail</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'add_food' %}">Add Food</a></li>
+        </ul>
+    </nav>
+
+    <h1>{{ food.name }}</h1>
+    <p>Type: {{ food.food_type }}</p>
+    <p>Ingredients: {{ food.ingredients }}</p>
+    <p>Price: {{ food.price }}</p>
+    <p>Views: {{ food.view_count }}</p>
+    <a href="{% url 'edit_food' food.pk %}">Edit</a>
+    <a href="{% url 'delete_food' food.pk %}">Delete</a>
+    <a href="{% url 'food_list' %}">Back to list</a>
+</body>
+</html>

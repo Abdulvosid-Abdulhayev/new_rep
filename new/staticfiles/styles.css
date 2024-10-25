@@ -1,0 +1,178 @@
+/* Barcha sahifalar uchun umumiy uslub */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navbar uslubi */
+nav {
+    background-color: #34495e;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Asosiy kontent uslubi */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+/* Tugmalar uchun uslub */
+button {
+    padding: 10px 20px;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+a {
+    color: #34495e;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffa500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #bdc3c7;
+}
+
+ul li a {
+    display: block;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Form uchun uslub */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input[type="submit"], form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #34495e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover, form button:hover {
+    background-color: #ffa500;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
